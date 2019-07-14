@@ -502,6 +502,10 @@ ul#nav li.current a {
   padding-top: 90px;
   padding-bottom: 60px;
 }
+#portfolio .live {
+  font-size: 50px;
+  color: white;
+}
 #portfolio h1 {
   font: 15px/24px "opensans-semibold", sans-serif;
   text-transform: uppercase;
@@ -516,7 +520,6 @@ ul#nav li.current a {
   margin: 36px 0px;
 }
 .portfolio-item {
-  margin: 4% 0% !important;
   background: white;
 }
 .portfolio-item .item-wrap {
@@ -582,6 +585,10 @@ ul#nav li.current a {
   vertical-align: bottom;
 }
 .portfolio-item .portfolio-item-meta {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   padding: 18px;
 }
 .portfolio-item .portfolio-item-meta h5 {
@@ -595,12 +602,12 @@ ul#nav li.current a {
 }
 
 /* on hover */
-.portfolio-item:hover .overlay {
+.item-wrap:hover .overlay {
   opacity: 1;
   -moz-opacity: 1;
   filter: alpha(opacity=100);
 }
-.portfolio-item:hover .link-icon {
+.item-wrap:hover .link-icon {
   opacity: 1;
   -moz-opacity: 1;
   filter: alpha(opacity=100);
