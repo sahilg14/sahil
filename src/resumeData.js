@@ -71,24 +71,16 @@ let resumeData = {
     ],
     "portfolio":[
       {
-        "name":"project1",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/coffee.jpg"
+        "name":"London Top Tailoring",
+        "description":"I first met Hamid in London, Ontario. He asked me if i could help him with making an online presence for his clothing alterations business. I was very excited to work with him as this would be my first real world project. He started getting online enquiries, from day one given that he was already getting a lot of organic traffic in google business listings. I still take care of the maintainence of his website. ",
+        "imgurl":"images/portfolio/bg2.jpg",
+        "link":"http://www.londontoptailoring.com/"
       },
       {
-        "name":"project2",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/console.jpg"
-      },
-      {
-        "name":"project3",
-        "description":"mobileapp",  
-        "imgurl":"images/portfolio/farmerboy.jpg"
-      },
-      {
-        "name":"project4",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/girl.jpg"
+        "name":"Velezfit",
+        "description":"Juan was very passionate about physical fitness and then he turned this passion in to motivation to build his business in personal training. He started with basic digital marketing like facebook and instagram ads, but then he realised he needed a portal with more information about his services that would keep the customers engaged and also take it to the next step. Making the sale ! He now does meal planning, online training sessions, and one on one training.",
+        "imgurl":"images/portfolio/p3.jpeg",
+        "link": "https://www.velezfit.com/"
       }
     ],
     "testimonials":[
