@@ -73,34 +73,35 @@ let resumeData = {
       {
         "name":"project1",
         "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
+        "imgurl":"images/portfolio/coffee.jpg"
       },
       {
         "name":"project2",
         "description":"mobileapp",
-        "imgurl":"images/portfolio/project.jpg"
+        "imgurl":"images/portfolio/console.jpg"
       },
       {
         "name":"project3",
         "description":"mobileapp",  
-        "imgurl":"images/portfolio/project2.png"
+        "imgurl":"images/portfolio/farmerboy.jpg"
       },
       {
         "name":"project4",
         "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
+        "imgurl":"images/portfolio/girl.jpg"
       }
     ],
     "testimonials":[
       {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
+        "description":"After Sahil redesigned our we site we a got lot of contracts. He not only has the skills to do the job but also he listens what you want to do and works hard to accomplish it. I highly recommend him to build or redesign your web site.",
+        "name":"Jorge Velez - Ezee Computer Training"
       },
       {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
+        "description":"I had the pleasure of working with one of the easiest to deal with designers I’ve ever met. He was very open and listened to all my ideas while at the same time providing his suggestions and expertise. I would certainly work with him for any future ventures and I highly recommend the use of their services to anyone!",
+        "name":"Juan - Velezfit"
       }
     ]
   }
   
-  export default resumeData
+  export default resumeData;
+  
