@@ -4,7 +4,7 @@ let resumeData = {
     "role": "Full Stack Software Engineer",
     "linkedinId":"sahilg14",
     "skypeid": "sahilg14",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    "roleDescription": " I like to create applications that we can use in daily life. I like to learn about new technologies, trying different cuisines.",
     "socialLinks":[
         {
           "name":"linkedin",
@@ -22,23 +22,23 @@ let resumeData = {
           "className":"fa fa-twitter"
         }
       ],
-    "aboutme":"I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
-    "address":"India",
-    "website":"https://rbhatia46.github.io",
+    "aboutme":"I am currently a full stack software engineer at a major Fintech in Canada. I am an electronics engineer, currently diving deeper into bringing hardware and software together to make something meaningfull. I believe that we must try to listen with the intent to understand , not to reply.",
+    "address":"Canada",
+    "website":"https://sahilg14.github.io/sahil",
     "education":[
       {
-        "UniversityName":"The LNM Insitute of Information Technology",
-        "specialization":"Some specialization",
+        "UniversityName":"University of Windsor",
+        "specialization":"Electrical and Computer Engineering",
         "MonthOfPassing":"Aug",
-        "YearOfPassing":"2020",
-        "Achievements":"Some Achievements"
+        "YearOfPassing":"2016",
+        "Achievements":"Research Assistant at United way centraid Windsor-Essex County"
       },
       {
-        "UniversityName":"Some University",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Jan",
-        "YearOfPassing":"2018",
-        "Achievements":"Some Achievements"
+        "UniversityName":"Panjab University",
+        "specialization":"Electronics and Communication Engineering",
+        "MonthOfPassing":"June",
+        "YearOfPassing":"2015",
+        "Achievements":"Robotics and Embedded Systems Circuit designing and Manufacturing"
       }
     ],
     "work":[
