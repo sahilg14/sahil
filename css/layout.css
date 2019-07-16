@@ -29,7 +29,9 @@ body {
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
-
+.centerText {
+  text-align: center;
+}
 header {
   position: relative;
   height: 800px;
@@ -937,7 +939,7 @@ call-to-action .button {
   color: #636363;
 }
 #contact .section-head {
-  margin-bottom: 42px;
+  margin: 42px 0px;
 }
 
 #contact a,
@@ -984,6 +986,10 @@ call-to-action .button {
 }
 
 /* contact form */
+.contactUsForm {
+  border: 2px solid white;
+  padding: 18px;
+}
 #contact form {
   margin-bottom: 30px;
 }
@@ -995,6 +1001,7 @@ call-to-action .button {
   float: left;
   width: 26%;
 }
+
 #contact input,
 #contact textarea,
 #contact select {
@@ -1006,13 +1013,13 @@ call-to-action .button {
   outline: none;
   font-size: 15px;
   line-height: 24px;
-  width: 65%;
+  width: 100%;
 }
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
-  color: #fff;
-  background-color: #11abb0;
+  color: #000;
+  background-color: #fff;
 }
 #contact button.submit {
   text-transform: uppercase;
