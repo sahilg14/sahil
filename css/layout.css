@@ -544,6 +544,7 @@ ul#nav li.current a {
 .portfolio-item .item-wrap a {
   display: block;
   cursor: pointer;
+  z-index: 1;
 }
 
 /* overlay */
