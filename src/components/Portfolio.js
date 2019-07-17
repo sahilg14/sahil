@@ -39,7 +39,7 @@ export default class Porfolio extends Component {
                       </div>
                     </a>
                     <div className="seven columns item-wrap">
-                      <h1>{item.name}</h1>
+                      <h4 className="centerText">{item.name}</h4>
                       <p>{item.description}</p>
                     </div>
                   </div>
