@@ -520,11 +520,17 @@ ul#nav li.current a {
 /* Portfolio Content */
 #portfolio-wrapper .columns {
   margin: 36px 0px;
+  background: white;
 }
 .portfolio-item {
   background: white;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .portfolio-item .item-wrap {
+  padding: 20px;
   background: #fff;
   overflow: hidden;
   position: relative;
