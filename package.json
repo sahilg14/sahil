@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://sahilg14.github.io/sahil",
   "dependencies": {
+    "fetch": "^1.1.0",
     "gh-pages": "^2.0.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
