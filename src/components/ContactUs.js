@@ -3,20 +3,26 @@ import Input from "./common/Input";
 export default class ContactUs extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", email: "", message: "", loading: false };
+    this.state = {
+      name: "",
+      telephone: "",
+      email: "",
+      message: "",
+      loading: false
+    };
   }
-  handleSubmit(e) {
+
+  onChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = e => {
     e.preventDefault();
-    const userData = {};
-    const { name, email, message } = this.state;
-    userData.name = name;
-    userData.email = email;
-    userData.telephone = 12345;
-    userData.message = message;
+    const { name, telephone, email, message } = this.state;
     this.setState({ loading: true });
     fetch("https://elementarycreative.com/send_form_email.php", {
       method: "POST",
-      body: JSON.stringify(userData),
+      body: JSON.stringify({ name, telephone, email, message }),
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json"
@@ -24,7 +30,7 @@ export default class ContactUs extends Component {
     }).then(response => {
       console.log("Success");
     });
-  }
+  };
   render() {
     return (
       <section id="contact">
@@ -35,50 +41,48 @@ export default class ContactUs extends Component {
             </h3>
           </div>
 
-          <form>
-            <div className="columns six">
+          <form onSubmit={this.handleSubmit}>
+            <div className="columns four">
               <Input
                 id={"name"}
                 name={"name"}
                 type={"text"}
                 value={this.state.name}
-                handleChange={e => {
-                  this.setState({ name: e.target.value });
-                }}
+                handleChange={this.onChange}
                 placeholder={"Name"}
               />
             </div>
-            <div className="columns six">
+            <div className="columns four">
+              <Input
+                id={"telephone"}
+                name={"telephone"}
+                type={"text"}
+                value={this.state.telephone}
+                handleChange={this.onChange}
+                placeholder={"Phone"}
+              />
+            </div>
+            <div className="columns four">
               <Input
                 id={"email"}
                 name={"email"}
                 type={"text"}
                 value={this.state.email}
-                handleChange={e => {
-                  this.setState({ email: e.target.value });
-                }}
+                handleChange={this.onChange}
                 placeholder={"Email"}
               />
             </div>
             <div className="columns twelve">
               <textarea
-                onChange={e => {
-                  this.setState({ message: e.target.value });
-                }}
-                id={"Message"}
+                onChange={this.onChange}
+                id={"message"}
                 name={"message"}
                 placeholder={"Message"}
                 value={this.state.message}
               />
             </div>
             <div className="columns centerText twelve">
-              <button
-                onClick={e => {
-                  this.handleSubmit(e);
-                }}
-                id={"Submit"}
-                name={"Submit"}
-              >
+              <button type="submit" id={"Submit"} name={"Submit"}>
                 Submit
               </button>
             </div>
