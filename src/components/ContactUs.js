@@ -7,7 +7,12 @@ export default class ContactUs extends Component {
   }
   handleSubmit(e) {
     e.preventDefault();
-    let userData = this.state;
+    const userData = {};
+    const { name, email, message } = this.state;
+    userData.name = name;
+    userData.email = email;
+    userData.telephone = 12345;
+    userData.message = message;
     this.setState({ loading: true });
     fetch("https://elementarycreative.com/send_form_email.php", {
       method: "POST",
