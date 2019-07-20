@@ -3,7 +3,7 @@ import Input from "./common/Input";
 export default class ContactUs extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", email: "", msg: "", loading: false };
+    this.state = { name: "", email: "", message: "", loading: false };
   }
   handleSubmit(e) {
     e.preventDefault();
@@ -58,12 +58,12 @@ export default class ContactUs extends Component {
             <div className="columns twelve">
               <textarea
                 onChange={e => {
-                  this.setState({ msg: e.target.value });
+                  this.setState({ message: e.target.value });
                 }}
                 id={"Message"}
-                name={"msg"}
+                name={"message"}
                 placeholder={"Message"}
-                value={this.state.msg}
+                value={this.state.message}
               />
             </div>
             <div className="columns centerText twelve">
