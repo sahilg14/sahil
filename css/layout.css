@@ -1057,6 +1057,17 @@ call-to-action .button {
   width: 65%;
   margin-left: 26%;
 }
+.success {
+  background: rgb(83, 172, 83);
+  padding: 24px 24px;
+  margin-bottom: 36px;
+
+}
+.error {
+  background: #b97171;
+  padding: 24px 24px;
+  margin-bottom: 36px;
+}
 #message-warning {
   color: #d72828;
 }
