@@ -8,7 +8,9 @@ export default class ContactUs extends Component {
       telephone: "",
       email: "",
       message: "",
-      loading: false
+      loading: false,
+      error: "",
+      success: ""
     };
   }
 
@@ -20,22 +22,47 @@ export default class ContactUs extends Component {
     e.preventDefault();
     const { name, telephone, email, message } = this.state;
     this.setState({ loading: true });
-    fetch("https://bg7m4eb14h.execute-api.us-east-1.amazonaws.com/dev/email/send", {
-      method: "POST",
-      body: JSON.stringify({ name, telephone, email, message }),
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
+    fetch(
+      "https://bg7m4eb14h.execute-api.us-east-1.amazonaws.com/dev/email/send",
+      {
+        method: "POST",
+        body: JSON.stringify({ name, telephone, email, message }),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json"
+        }
       }
-    }).then(response => {
-      console.log("Success");
-    });
+    )
+      .then(response => {
+        console.log("Success");
+        this.setState({
+          success:
+            "Your message has been delivered. I will get back to you as soon as possible.",
+          loading: false,
+          name: "",
+          telephone: "",
+          email: "",
+          message: "",
+          error:''
+        });
+      })
+      .catch(err => {
+        console.log("error", err);
+        this.setState({
+          error:
+            "There was an error sending your email. Please try again later.",
+          loading: false,
+          success:''
+        });
+      });
   };
   render() {
     return (
       <section id="contact">
         <div className="contactUsForm row">
           <div className="twelve section-head centerText columns">
+            {this.state.success && <h3 className="lead success">{this.state.success}</h3>}
+            {this.state.error && <h3 className="lead error">{this.state.error}</h3>}
             <h3 className="lead">
               Feel free to contact me for any work or suggestions below
             </h3>
