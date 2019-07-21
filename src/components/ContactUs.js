@@ -20,7 +20,7 @@ export default class ContactUs extends Component {
     e.preventDefault();
     const { name, telephone, email, message } = this.state;
     this.setState({ loading: true });
-    fetch("https://elementarycreative.com/send_form_email.php", {
+    fetch("https://bg7m4eb14h.execute-api.us-east-1.amazonaws.com/dev/email/send", {
       method: "POST",
       body: JSON.stringify({ name, telephone, email, message }),
       headers: {
