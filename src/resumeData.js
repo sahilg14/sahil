@@ -22,7 +22,7 @@ let resumeData = {
           "className":"fa fa-twitter"
         }
       ],
-    "aboutme":"I am currently a full stack software engineer at a major Fintech in Canada. I am an electronics engineer, currently diving deeper into bringing hardware and software together to make something meaningfull. I believe that we must try to listen with the intent to understand , not to reply.",
+    "aboutme":"I am currently a full stack software engineer at a major Fintech in Canada. I am diving deep into bringing hardware and software together to make something meaningfull. I believe that we must try to listen with the intent to understand , not to reply.",
     "address":"Canada",
     "website":"https://sahilg14.github.io/sahil",
     "education":[
