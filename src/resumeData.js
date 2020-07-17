@@ -1,10 +1,10 @@
 let resumeData = {
     "imagebaseurl":"https://sahilg14.github.io/",
     "name": "Sahil Goyal",
-    "role": "Full Stack Software Engineer",
+    "role": "Software Engineer",
     "linkedinId":"sahilg14",
     "skypeid": "sahilg14",
-    "roleDescription": " I like to create applications that we can use in daily life. I like to learn about new technologies, trying different cuisines.",
+    "roleDescription": "",
     "socialLinks":[
         {
           "name":"linkedin",
@@ -22,7 +22,7 @@ let resumeData = {
           "className":"fa fa-twitter"
         }
       ],
-    "aboutme":"I am currently a full stack software engineer at a major Fintech in Canada. I am diving deep into bringing hardware and software together to make something meaningfull. I believe that we must try to listen with the intent to understand , not to reply.",
+    "aboutme":"I believe that we must try to listen with the intent to understand , not to reply.",
     "address":"Canada",
     "website":"https://sahilg14.github.io/sahil",
     "education":[
