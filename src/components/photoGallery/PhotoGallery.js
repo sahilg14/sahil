@@ -27,7 +27,7 @@ const IMAGES = [
 class PhotoGallery extends React.Component {
   render() {
     return (
-      <section id="photos">
+      <section id="gallery">
         <div className="row">
           <div className="twelve columns collapsed">
             <h1>My favourite places.</h1>
