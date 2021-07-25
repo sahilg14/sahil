@@ -1,0 +1,10 @@
+.contactInfoDiv {
+    padding: 20px;
+    border: 2px solid white
+  }
+.contactInfoDiv p {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+    height: 100%;
+  }

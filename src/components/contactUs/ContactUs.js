@@ -1,6 +1,8 @@
-import React, { Component } from "react";
-import Input from "./common/Input";
-export default class ContactUs extends Component {
+import React from "react";
+import Input from "../common/Input";
+import "./index.css";
+
+export default class ContactUs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,15 +12,15 @@ export default class ContactUs extends Component {
       message: "",
       loading: false,
       error: "",
-      success: ""
+      success: "",
     };
   }
 
-  onChange = e => {
+  onChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     const { name, telephone, email, message } = this.state;
     this.setState({ loading: true });
@@ -29,11 +31,11 @@ export default class ContactUs extends Component {
         body: JSON.stringify({ name, telephone, email, message }),
         headers: {
           Accept: "application/json",
-          "Content-Type": "application/json"
-        }
+          "Content-Type": "application/json",
+        },
       }
     )
-      .then(response => {
+      .then((response) => {
         console.log("Success");
         this.setState({
           success:
@@ -43,16 +45,16 @@ export default class ContactUs extends Component {
           telephone: "",
           email: "",
           message: "",
-          error:''
+          error: "",
         });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log("error", err);
         this.setState({
           error:
             "There was an error sending your email. Please try again later.",
           loading: false,
-          success:''
+          success: "",
         });
       });
   };
@@ -61,8 +63,12 @@ export default class ContactUs extends Component {
       <section id="contact">
         <div className="contactUsForm row">
           <div className="twelve section-head centerText columns">
-            {this.state.success && <h3 className="lead success">{this.state.success}</h3>}
-            {this.state.error && <h3 className="lead error">{this.state.error}</h3>}
+            {this.state.success && (
+              <h3 className="lead success">{this.state.success}</h3>
+            )}
+            {this.state.error && (
+              <h3 className="lead error">{this.state.error}</h3>
+            )}
             <h3 className="lead">
               Feel free to contact me for any work or suggestions below
             </h3>
@@ -81,22 +87,22 @@ export default class ContactUs extends Component {
             </div>
             <div className="columns four">
               <Input
-                id={"telephone"}
-                name={"telephone"}
-                type={"text"}
-                value={this.state.telephone}
-                handleChange={this.onChange}
-                placeholder={"Phone"}
-              />
-            </div>
-            <div className="columns four">
-              <Input
                 id={"email"}
                 name={"email"}
                 type={"text"}
                 value={this.state.email}
                 handleChange={this.onChange}
                 placeholder={"Email"}
+              />
+            </div>
+            <div className="columns four">
+              <Input
+                id={"telephone"}
+                name={"telephone"}
+                type={"text"}
+                value={this.state.telephone}
+                handleChange={this.onChange}
+                placeholder={"Phone"}
               />
             </div>
             <div className="columns twelve">

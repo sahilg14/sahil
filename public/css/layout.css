@@ -181,7 +181,7 @@ ul#nav li {
 /* Links */
 ul#nav li a {
   /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
-
+  font-size: 14px;
   display: inline-block;
   padding: 8px 13px;
   line-height: 32px;
@@ -230,7 +230,7 @@ ul#nav li.current a {
 }
 #about p {
   line-height: 30px;
-  color: #7a7a7a;
+  color: #5d5d5d;
 }
 #about .profile-pic {
   position: relative;
@@ -679,7 +679,7 @@ ul#nav li.current a {
 #photos {
   background: #ebeeee;
   padding-top: 90px;
-  padding-bottom: 60px;
+  padding-bottom: 150px;
 }
 #photos h1 {
   font: 15px/24px "opensans-semibold", sans-serif;
@@ -958,10 +958,9 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-  background: #191919;
+  background-color: white;
   padding-top: 96px;
   padding-bottom: 102px;
-  color: #636363;
 }
 #contact .section-head {
   margin: 42px 0px;
@@ -1012,7 +1011,7 @@ call-to-action .button {
 
 /* contact form */
 .contactUsForm {
-  border: 2px solid white;
+  border: 2px solid black;
   padding: 18px;
 }
 #contact form {
@@ -1021,7 +1020,7 @@ call-to-action .button {
 #contact label {
   font: 15px/24px "opensans-bold", sans-serif;
   margin: 12px 0;
-  color: #ebeeee;
+  color: black;
   display: inline-block;
   float: left;
   width: 26%;
@@ -1031,8 +1030,8 @@ call-to-action .button {
 #contact textarea,
 #contact select {
   padding: 18px 20px;
-  color: #eee;
-  background: #373233;
+  color: rgb(103, 103, 103);
+  background: #eee;
   margin-bottom: 42px;
   border: 0;
   outline: none;
@@ -1044,7 +1043,8 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
   color: #000;
-  background-color: #fff;
+  background-color: #eee;
+  border: 1px solid black;
 }
 #contact button.submit {
   text-transform: uppercase;
