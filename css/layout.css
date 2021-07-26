@@ -1193,6 +1193,7 @@ call-to-action .button {
   background: rgb(83, 172, 83);
   padding: 24px 24px;
   margin-bottom: 36px;
+  color: white;
 
 }
 .error {
