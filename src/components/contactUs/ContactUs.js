@@ -37,6 +37,7 @@ export default class ContactUs extends React.Component {
     )
       .then((response) => {
         console.log("Success");
+        console.log(response);
         this.setState({
           success:
             "Your message has been delivered. I will get back to you as soon as possible.",
@@ -70,7 +71,7 @@ export default class ContactUs extends React.Component {
               <h3 className="lead error">{this.state.error}</h3>
             )}
             <h3 className="lead">
-              Feel free to contact me for any work or suggestions below
+              Feel free to contact me to connect
             </h3>
           </div>
 
