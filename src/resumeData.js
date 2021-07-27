@@ -23,11 +23,11 @@ let resumeData = {
         }
       ],
     "aboutme":["I believe that we must try to listen with the intent to understand , not to reply.",
-               "A software engineer than more than 6 years of experience mostly in latest javascript technologies but open to learn anything. I have worked with manufacturing, insurance and ecommerce industries so far and can't wait for my next challenge. I am very interested in the fintech space, especially blockchain lending and collateral asset management.",
+               "A software engineer with more than 6 years of experience mostly in latest javascript technologies but open to learn anything. I have worked with manufacturing, insurance and ecommerce industries so far and can't wait for my next challenge. I am very interested in the fintech space, especially blockchain lending and collateral asset management.",
                "I started my career in high school where I learned to make basic html webpages and got a chance to work with some great clients like alcohol distributors for companies like Budweiser which gave me a chance to work with and understand marketing materials and branding.",
                "If you ask me one project that I am most proud of, it would be a facility management system that I built using ReactJs and NodeJs with BFF framework. I also used mongodb and other GCP services to make it secure and scalable. I hope to launch it in production someday and make this web app a reality.",
                ""],
-    "position": "Software Engineer at Amazon",               
+    "position": "Software Engineer, Amazon",               
     "address":"402 Dunsmuir St, Vancouver, BC V6B 0S1",
     "website":"https://sahilg14.github.io/sahil",
     "education":[
